@@ -1,0 +1,788 @@
+/* Media Queries BELOW Fluid Threshold of 767px/768px */
+
+/* ///////////////////
+////// FONTS /////////
+/////////////////// */
+
+$fontVerySmall: 8px;
+$fontSmall: 10px;
+$fontMedium: 12px;
+$fontBig: 16px;
+$fontVeryBig: 20px;
+
+/* landscape phone to portrait tablet - this is where columns become fluid and automatically stack vertically */
+@media (min-width: 481px) and (max-width: 767px) {
+  #logo-section {
+    width: 125px;
+    /*margin: 0 auto;*/
+    margin-top: 10px;
+    margin-left: 5px;
+    float: left;
+  }
+  #logo-section h1 {
+    height: 50px;
+    width: 125px;
+    margin: 0 auto;
+  }
+    #logo-section h1 a {
+      float: left;
+      margin: 2% auto;
+      background: url('../images/wonk-logo-sprite.png');
+      /*background: url('../images/wonk-full-trans-bg.png');*/
+      background-size: 121px 96px; /*was background-size: 242px 174px; */
+      background-repeat: no-repeat;
+      text-indent: -9999px; /*in ecardly this is 100%*/
+      white-space: nowrap;
+      overflow: hidden;
+      text-decoration: none;
+      display: block;
+      height: 47px;/* should have been 44px but prob'ly 'cuz of borders 47px works better */
+      width: 125px;/* should have been 121px but prob'ly 'cuz of borders 47px works better */
+      background-position: 0px 0px;
+/*          border: 2px solid #14325A;
+      -webkit-box-shadow: 5px 3px 13px 0px #16161a;  Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ 
+      box-shadow: 5px 3px 13px 0px #16161a; /* Opera 10.5, IE9+, Firefox 4+, Chrome 6+, iOS 5 */
+      margin: 2% auto;
+  }
+  /*Admin Nav*/
+  #admin-section {
+    margin: 1% auto;
+    margin-top: 16px;
+    width: 261px;
+    float: right;
+  }
+  #admin-section nav {
+    display: block;
+    margin: 0% auto;
+  }
+  #admin-section img {
+    width: 20px;
+    height: 20px;
+  }
+  #admin-section nav ul {
+    /*float: left;*/
+    margin: 0% auto;
+    display: block;
+  }
+  #header-top-section {
+    height: 66px;
+  }
+  #header-top-section #admin-section {
+    margin-top: 22px;
+  }
+  #header-top-section .navbar-inner {
+    height: 66px;
+  }
+  #header-top-section .navbar-inner li {
+    margin-left: 0px;
+  }
+  #header-top-section .navbar-inner li#sign-in {
+    /*float: left;*/
+  }
+  #header-top-section .navbar-inner li #create-account {
+    marign-left: none;
+  }
+  #header-top-section .navbar-inner li a {
+    font-size: 14px;
+  }
+  #header-bottom-section {
+    height: 34px;
+  }
+  #header-bottom-section .navbar-inner {
+    height: 30px;
+    padding-left: 0px;
+    padding-right: 3px;
+  }
+  #header-bottom-section li {
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 30px;
+  }
+  #header-bottom-section .navbar-inner li a {
+    font-size: 14px;
+    height: 29px;
+    line-height: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+  }
+  #week-month-year ul.nav {
+    width: 49%;
+  }
+  #week-month-year .navbar-form {
+    float: right;
+  }
+  #week-month-year .navbar-form input, textarea {
+    float: right;
+    width: 80%;
+    height: 24px;
+  }
+  .navbar .nav {
+    width: 44%;
+  }
+  .navbar-form input, textarea {
+    width: 79%;
+    max-width: 300px;
+    font-size: 14px;
+    height: 24px;
+  }
+  .navbar .btn {
+    float: right;
+    margin-right: 0%;
+    margin-top: 4px;
+    width: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    height: 24px;
+    line-height: 6px;
+    padding-left: 4px;
+  }
+  /*form.searchform {
+    display: none
+  }*/
+  input.searchfield {
+    display: none;
+  }
+  input.searchbutton {
+    display: none;
+  }
+
+  h1#page-banner {
+    /* font-size: 25px; */
+    margin: 2% auto;
+    text-align: center;
+  }    
+
+  /*Media Area*/
+  .media-area {
+    width: 60%;
+  }
+
+  /*Font styling relevant */
+  /*Box Banner*/
+  .box-banner {
+    width: 36%;
+    padding-left: 0%;
+    margin-top: 0%
+  }
+  .box-banner h1 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-top: 28%;
+    margin-left: 0%;
+    text-align: center;
+  }
+  .box-banner h2 {
+    font-size: 18px;
+    line-height: 18px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .trend-box {
+    margin-top: 0%;
+    margin-bottom: 6%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .trend-box h3 {
+    font-size: 11px;
+    line-height: 11px;
+    margin-left: 2%;
+    position: relative;
+    top: 4px;
+  }
+  .trend-box table td {
+    border-width: 3px;
+    height: 30px;
+  }
+  .trend-box table td a {
+    font-size: 12px;
+    line-height: 12px;
+    /*background: gray;*/
+    /*margin: 2% 2%;*/
+  }
+  #load-more-topics {
+    /*height: 50px;*/
+  }
+  #load-more-topics h1 {
+    font-size: 16px;
+    padding-top: 14px;
+  }
+
+  /*Footer*/
+  #footer {
+    height: 75px;
+  }
+  #footer-logo-section {
+    /*background: blue;*/
+    width: 62px;
+    float: left;
+    display: block;
+  }
+  #footer .navbar-inner li {
+    margin-right: 16%;
+  }
+  #footer-logo-section h1 {
+    float: none;
+    margin-top: 5px;
+  }
+  #footer-logo-section h1 a {
+    /*background-size: 130px 87px;
+    height: 43px;
+    width: 68px;*/
+    margin: 0% auto;
+    /*text-align: center;*/
+    display: block;
+  }
+  #footer-link-section {
+    width: 85%;
+    float: right;
+    display: block;
+    margin-top: 14px;
+  }
+  #footer .navbar-inner {
+    height: 68px;
+  }
+  #footer .navbar-inner li a {
+    font-size: 11px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  #footer img {
+    /*margin-top: 10px;*/
+    margin-left: 5px;
+    margin-top: 12px;
+    width: 62px;
+    height: 45px;
+  }
+  #footer .navbar-inner li.copyright {
+    font-size: 8px;
+    margin-top: 32px;
+  }
+  #footer .navbar-inner li.contact {
+    margin-right: 5px;
+  }
+  #user-new {
+    min-width: 0px;
+  }
+  #user-new h2 {
+    font-size: 20px;
+  }
+  #user-new table label {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  #user-new .form-buttons textarea, input[type="text"] {
+    width: 150px;
+    margin-bottom: 2px;
+    height: 26px;
+  }
+  #user-new .form-buttons textarea, input[type="password"] {
+    width: 150px;
+    margin-bottom: 2px;
+    height: 26px;
+  }
+  #user-new .form-buttons input[type="submit"] {
+    height: 30px;
+    font-size: 18px;
+  }
+  #facebook-connect-section h2 {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  #about p {
+    font-size: 17px;
+    line-height: 25px;
+    margin-left: 5px;
+  }
+  #about blockquote {
+    font-size: 17px;
+    /*min-height: 400px;*/
+    line-height: 25px;
+    margin-left: 5px;
+  }
+
+  #main .span8-offset2-container {
+    /*see bootstrap-responsive line 371*/
+    /*margin-left: 17.094017094017094%;*/
+    /*border-top: 7px solid white;*/
+    width: 94%;
+    margin-left: 3%;
+  }
+  #main .span10-offset1-container {
+    /*see bootstrap-responsive line 379*/
+    /*margin-left: 8.547008547008547%;*/
+    width: 94%;
+    margin-left: 3%;
+  }
+  #or-section {
+    margin-top: none;
+  }
+  #facebook-connect-section {
+    margin-bottom: 0px;
+  }
+}
+/* end landscape phone to portrait tablet */
+
+/* landscape phone and down */
+      @media (max-width: 480px) {
+        #header-top-section {
+          height: 66px;
+        }
+        #header-top-section #admin-section {
+          width: 78%;
+        }
+        #header-top-section .navbar-inner {
+          height: 66px;
+        }
+        /*Logo*/
+        #logo-section {
+          width: 125px;
+          /*margin: 0 auto;*/
+          margin-top: 10px;
+          margin-left: 5px;
+          float: left;
+        }
+        #logo-section h1 {
+          height: 50px;
+          width: 125px;
+        }
+        #logo-section h1 a {
+          background: url('../images/wonk-logo-sprite.png');
+          background-size: 121px 96px; /*was background-size: 242px 174px; */
+          background-repeat: no-repeat;
+          text-indent: -9999px; /*in ecardly this is 100%*/
+          white-space: nowrap;
+          overflow: hidden;
+          text-decoration: none;
+          display: block;
+          height: 47px;/* should have been 44px but prob'ly 'cuz of borders 47px works better */
+          width: 125px;/* should have been 121px but prob'ly 'cuz of borders 47px works better */
+          background-position: 0px 0px;
+/*          border: 2px solid #14325A;
+          -webkit-box-shadow: 5px 3px 13px 0px #16161a;  Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ 
+          box-shadow: 5px 3px 13px 0px #16161a; /* Opera 10.5, IE9+, Firefox 4+, Chrome 6+, iOS 5 */
+          margin: 2% auto;
+        }
+       /*   #logo-section h1 a {
+            background-size: 121px 89px;
+          }*/
+          #logo-section h1 a:hover {
+            /*background-size: 121px 96px;
+            background-position: 0px -48px;*/
+          }
+
+        /*Admin Section*/  
+          #admin-section {
+            width: 270px;
+            margin: 3% auto 1% auto;
+          }
+          /*Admin Nav*/
+          #admin-section {
+            margin: 1% auto;
+            margin-top: 22px;
+            width: 40%;
+            float: none;
+          }
+          #admin-section nav {
+            display: block;
+            margin: 0% auto;
+          }
+          .navbar .nav {
+            width: 57%;
+          }
+          #week-month-year .navbar-form {
+            float: right;
+            width: 43%;
+          }
+          #header-top-section #admin-section {
+            width: 217px;
+            float: right;
+          }
+          #header-top-section #admin-section li {
+            margin-left: 6px;
+          }
+          #admin-section li #create-account {
+            margin-left: none;
+            /*float: left;*/
+          }
+          #admin-section li #create-account {
+            /*float: right;*/
+          }
+          #header-top-section .navbar-inner {
+            height: 66px;
+          }
+          #header-top-section .navbar-inner li a {
+            font-size: 12px;
+            margin-left: 1px;
+          }
+         /* #header-top-section .navbar-inner li a .admin-image {
+            margin-left: none;
+          }*/
+          /*#admin-section a.admin-image {
+            margin-left: 0px;
+          }*/
+          /*#header-top-section .navbar-inner li a .admin-image {
+            margin-left: 0px;
+          }*/
+          #header-bottom-section {
+            height: 31px;
+          }
+          #header-bottom-section .navbar-inner {
+            height: 30px;
+            padding-left: 0px;
+            padding-right: 3px;
+          }
+          #header-bottom-section li {
+            margin-left: 0%;
+            margin-right: 0%;
+            height: 30px;
+          }
+          #header-bottom-section .navbar-inner li a {
+            font-size: 14px;
+            /*line-height: 14px;*/
+            height: 30px;
+            line-height: 12px;
+            padding-top: 8px;
+          }
+          .navbar-form input, textarea {
+            width: 72%;
+            max-width: 300px;
+            font-size: 12px;
+            height: 24px;
+          }
+          .navbar .btn {
+            width: 26px;
+            font-size: 12px;
+            padding-left: 3px;
+            margin-top: 4px;
+            height: 24px;
+          }
+          #admin-section nav {
+            display: block;
+            margin: 0% auto;
+          }
+          #admin-section img {
+            width: 20px;
+            height: 20px;
+          }
+          #admin-section a .admin-image {
+            margin-left: 0px;
+          }
+          #admin-section nav ul {
+            margin: 0% auto;
+            display: block;
+          }
+          #admin-section nav ul li a {
+              display: block;
+              height: 100%;
+              background: url('../images/sign-in-sprite.png') no-repeat;
+              background-size: 525px 150px;/* this is 3/4 of original background size which was 700x200 */
+              text-indent: -9999px;
+          }
+
+        /* Create Account */
+        
+        #admin-section nav ul li#create-account {
+          float: right;
+          width: 160px;/* was 213 - should be 159.75 */
+          height: 22px;/* was 30 */
+        }
+          #admin-section nav ul li#create-account a {
+          background-position: 0px -45px;
+          }
+            #admin-section nav ul li#create-account a:hover {
+              background-position: 0px -68px;/* was 90 */
+            }
+        /* Sign In */
+        #admin-section nav ul li#sign-in {
+          float: right;
+          width: 88.5px;/* was 118 */
+          height: 22.3px;/* was 30 */
+          margin-left: 20px;
+        }
+          #admin-section nav ul li#sign-in a {
+            background-position: 0px 1px;
+          }
+            #admin-section nav ul li#sign-in a:hover {
+              background-position: 0px -23px;/* was -22.5 */
+            }
+
+        .searchform {
+          display: none
+        }
+
+        h1#page-banner {
+          font-size: $fontVeryBig;
+          margin: 2% auto;
+          text-align: center;
+        }    
+
+        /*Media Area*/
+        .media-area {
+          width: 60%;
+        }
+
+        .trend-box {
+          margin-top: 0%;
+          margin-bottom: 6%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        /*Font styling relevant */
+        /*Box Banner*/
+        .box-banner {
+          width: 36%;
+          padding-left: 0%;
+          margin-top: 0%
+        }
+
+        /*form.searchform {
+          display: none
+        }*/
+        input.searchfield {
+          display: none;
+        }
+        input.searchbutton {
+          display: none;
+        }
+
+        /*Media Area*/
+        .media-area {
+          width: 60%;
+        }
+
+        /*Font styling relevant */
+        /*Box Banner*/
+        .box-banner {
+          width: 36%;
+          padding-left: 0%;
+          margin-top: 5%;
+        }
+        .box-banner h1 {
+          font-size: 20px;
+          line-height: 20px;
+          margin-top: 15%;
+          margin-left: 0%;
+          text-align: center;
+        }
+        .box-banner h2 {
+          font-size: 12px;
+          line-height: 18px;
+          margin-left: 0;
+          margin-top: 0;
+          margin-bottom: 0;
+          text-align: center;
+        }
+        .trend-box h3 {
+          font-size: 11px;
+          line-height: 11px;
+          margin-left: 2%;
+          position: relative;
+          top: 4px;
+        }
+        .trend-box table td {
+          border-width: 3px;
+          height: 25px;
+          padding-top: 2px;
+        }
+        .trend-box table td a {
+          font-size: 10px;
+          line-height: 10px;
+          /*background: gray;*/
+          /*margin: 2% 2%;*/
+        }
+        #load-more-topics {
+          height: 50px;
+        }
+        #load-more-topics h1 {
+          font-size: 13px;
+          padding-top: 5px;
+        }
+
+        /*Footer*/
+        #footer {
+          height: 74px;
+        }
+        #footer img {
+          margin-left: 5px;
+          margin-top: 2px;
+          width: 62px;
+          height: 45px;
+        }
+        #footer .navbar-inner li {
+          margin-right: 5%;
+        }
+        #footer-logo-section {
+          /*background: blue;*/
+          width: 62px;
+          float: left;
+          display: block;
+        }
+        #footer-logo-section h1 {
+          float: none;
+          margin-top: 5px;
+        }
+        #footer-logo-section h1 a {
+          /*background-size: 130px 87px;
+          height: 43px;
+          width: 68px;*/
+          margin: 0% auto;
+          /*text-align: center;*/
+          display: block;
+        }
+        #footer-link-section {
+          width: 82%;
+          float: right;
+          display: block;
+          margin-top: 7px;
+          height: 100%;
+        }
+        #footer .navbar-inner {
+          height: 68px;
+        }
+        #footer img {
+          /*margin-top: 10px;*/
+          margin-left: 5px;
+          margin-top: 12px;
+          width: 62px;
+          height: 45px;
+        }
+        #footer .navbar-inner li {
+          margin-right: 5%;
+          height: 49px;
+        }
+        #footer .navbar-inner li a {
+          font-size: 10px;
+          margin-left: 1px;
+          padding-left: 1px;
+          padding-right: 1px;
+          padding-top: 13px;
+        }
+          #footer-logo-section h1 {
+            /*height: 150px;*/
+            /*text-align: center;*/
+            /*margin: 0 auto;*/
+            /*display: block;*/
+            /*margin: 10px;*/
+            /*display: inline-block;*/
+            float: none;
+            margin-top: 5px;
+          }
+            #footer-logo-section h1 a {
+              background-size: 130px 87px;
+              height: 43px;
+              width: 68px;
+              margin: 9px auto 0px auto;
+              /*text-align: center;*/
+              display: block;
+            }
+
+          #footer .navbar-inner li.copyright {
+            font-size: 8px;
+            margin-top: 40px;
+          }
+
+          #footer .navbar-inner li.contact {
+            margin-right: 5px;
+          }
+
+
+    #admin-section nav ul li#sign-in a {
+      background-position: 0px -0.5px;
+    }
+    #week-month-year {
+/*      float: left;*/
+      height: 25px;
+      /*background: blue;*/
+    }
+    #week-month-year .navbar-form {
+      width: 41%;
+    }
+    #week-month-year .navbar-form .btn {
+      width: 24px;
+      margin-top: 3px;
+    }
+    #week-month-year ul {
+      height: 25px;
+    }
+    #week-month-year li a {
+      height: 22px;
+    }
+    #week-month-year li a {
+      height: 19px;
+    }
+    #week-month-year li a h1 {
+      font-size: 18px;
+      margin-top: 0px;
+      height: 22px;
+      line-height: 18px;
+    }
+    #week-month-year .navbar-form input, textarea {
+      width: 76%;
+      float: right;
+      height: 23px;
+      font-size: 13px;
+      margin-top: 3px;
+    }
+    #user-new {
+      min-width: 0px;
+    }
+    #user-new h2 {
+      font-size: 20px;
+    }
+    #user-new table label {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    #user-new .form-buttons textarea, input[type="text"] {
+      width: 135px;
+      margin-bottom: 0px;
+      height: 24px;
+    }
+    #user-new .form-buttons textarea, input[type="password"] {
+      width: 135px;
+      margin-bottom: 0px;
+      height: 24px;
+    }
+    #user-new .form-buttons input[type="submit"] {
+      height: 28px;
+      font-size: 16px;
+    }
+    #new-user-section #or-section {
+      margin-top: none;
+    } 
+    #facebook-connect-section {
+        margin-bottom: 0px;
+      }
+    #facebook-connect-section h2 {
+      font-size: 20px;
+      margin-bottom: 0px;
+    }
+    #about p {
+      font-size: 14px;
+      line-height: 18px;
+      margin-left: 5px;
+    }
+    #about blockquote {
+      font-size: 14px;
+      /*min-height: 400px;*/
+      line-height: 18px;
+      margin-left: 5px;
+    }
+
+    #main .span8-offset2-container {
+        /*see bootstrap-responsive line 371*/
+        /*margin-left: 17.094017094017094%;*/
+        /*border-top: 7px solid white;*/
+        width: 94%;
+        margin-left: 3%;
+      }
+      #main .span10-offset1-container {
+        /*see bootstrap-responsive line 379*/
+        /*margin-left: 8.547008547008547%;*/
+        width: 94%;
+        margin-left: 3%;
+      }
+} /* end landscape phone and down */

@@ -1,0 +1,290 @@
+/* Media Queries ABOVE Fluid Threshold of 767px/768px */
+
+/* ///////////////////
+////// FONTS /////////
+/////////////////// */
+
+$fontVerySmall: 14px;
+$fontSmall: 16px;
+$fontMedium: 20px;
+$fontBig: 27px;
+$fontVeryBig: 30px;
+
+/* large desktop and up - this is styling that is specific to large desktop and up*/
+/* styling that i want to be inherited by smaller media queries should go in public.css*/
+@media (min-width: 1200px) {
+  .trend-box {
+    /*max-width: 965px;*/
+    margin-top: 0%;
+    margin-bottom: 9%;
+    margin-left: auto;
+    margin-right: auto;
+    /*background: white;*/
+  }
+  .box-banner {
+    width: 25%;
+    padding-left: 0%;
+    margin-top: 7%;
+    text-align: center;
+  }
+  .box-banner h1 {
+/*    margin-top: 17%;
+    font-size: 31px;
+    line-height: 36px;*/
+  }
+  .box-banner h2 {
+    font-size: 23px;
+    /*line-height: 30px;
+    margin-top: 3%;*/
+  }
+
+  #load-more-topics h1 {
+    font-size: 27px;
+    margin: 0;
+    padding-top: 14px;
+  }
+}
+/* end min-width 1200 media query */
+
+/* medium desktop to large desktop */
+@media (min-width: 980px) and (max-width: 1199px) {   
+  /*Necessary to counteract Bootstrap bug:*/
+  /*offset2 on container not functioning properly in 980 to 1199px range*/
+  #main .span8-offset2-container {
+    /*see bootstrap-responsive line 371*/
+    margin-left: 17.094017094017094%;
+    /*border-top: 7px solid white;*/
+  }
+  #main .span10-offset1-container {
+    /*see bootstrap-responsive line 379*/
+    margin-left: 8.547008547008547%;
+  }
+  #header-bottom-section li {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  #user-new {
+    /*margin-left: 8.547008547008547%;*/
+    /*min-width: 328px;*/
+  }
+  #user-new table label {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  #user-new .form-buttons textarea, input[type="text"] {
+    width: 150px;
+  }
+  #user-new .form-buttons textarea, input[type="password"] {
+    width: 150px;
+  }
+  h1#page-banner {
+    font-size: $fontVeryBig;
+  }     
+  .trend-box {
+    /*max-width: 965px;*/
+    margin-top: 0%;
+    margin-bottom: 9%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .trend-box h3 {
+    font-size: 18px;
+  }
+  .trend-box table td {
+    height: 45px;
+  }
+  .trend-box table td a {
+    font-size: $fontSmall;
+    line-height: 19px;
+    padding-top: 9px;
+  }
+  .box-banner {
+    width: 25%;
+    padding-left: 0%;
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  .box-banner h1 {
+    margin-top: 40%;
+    font-size: $fontBig;
+    line-height: 36px;
+    text-align: center;
+  }
+  .box-banner h2 {
+    font-size: $fontMedium;
+    line-height: 30px;
+    margin-top: 3%;
+    text-align: center;
+  }
+  #load-more-topics h1 {
+    font-size: 22px;/* I've set this to track .box-banner h2 font-size */
+  }
+  #footer {
+    height: 111px;
+  }
+  #footer-link-section {
+    margin-top: 31px;
+    width: 87%;
+  }
+  #footer .navbar-inner li {
+    margin-right: 12%;
+  }
+    #footer .navbar-inner li a {
+      font-size: 21px;
+    }
+  #footer img {
+    margin-left: 5px;
+    margin-top: 7px;
+    width: 120.1px;
+    height: 87px;
+  }
+}
+
+/* portrait tablet to medium desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  
+  #header-top-section .navbar-inner li a {
+    font-size: 18px;
+  }
+  #header-bottom-section li {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .navbar .btn {
+    padding-left: 9px;
+  }
+  #footer {
+    height: 111px;
+  }
+  #footer .navbar-inner li a {
+    font-size: 16px;
+  }
+  #footer .navbar-inner li.copyright {
+    font-size: 10px;
+  }
+  #footer-link-section {
+    margin-top: 33px;
+  }
+  #or-section {
+    margin-left: none;
+  }
+  .navbar-form input, textarea {
+    /*max-width: 300px;*/
+  }
+  .navbar .btn {
+    width: 42px;
+    font-size: 16px;
+  }
+  h1#page-banner {
+    font-size: 30px;
+  }
+  .trend-box {
+    /*max-width: 965px;*/
+    margin-top: 0%;
+    margin-bottom: 9%;
+    margin-left: auto;
+    margin-right: auto;
+  }  
+  .trend-box h3 {
+    font-size: 14px;
+    line-height: 15px;
+    margin-left: 2%;
+    position: relative;
+    top: 4px;
+  }
+  .trend-box table td {
+    border-width: 3px;
+    height: 33px;
+  }
+  .trend-box table td a {
+    font-size: $fontVerySmall;
+    line-height: 14px;
+    padding-top: 7px;
+  }
+  .box-banner {
+    width: 25%;
+    padding-left: 0%;
+    margin-top: 5%
+  }
+  .box-banner h1 {
+    font-size: 27px;
+    line-height: 36px;
+    margin-top: 20%;
+    margin-left: 0%;
+    text-align: center;
+  }
+
+/*  .box-banner h2 {
+    font-size: 19px;
+    line-height: 24px;
+  }*/
+  .box-banner h2 {
+    font-size: 15px;
+    line-height: 18px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #load-more-topics h1 {
+    font-size: 19px;
+  }
+  #footer-link-section {
+    /*margin-top: 2%;*/
+    width: 83%;
+  }
+  #footer .navbar-inner li {
+    margin-right: 12%;
+  }
+  #footer img {
+    margin-left: 5px;
+    margin-top: 7px;
+    width: 120.1px;
+    height: 87px;
+  }
+  #user-new {
+    /*min-width: 300px;*/
+  }
+  #user-new h2 {
+    font-size: 24px;
+  }
+  #user-new tr {
+    height: 35px;
+  }
+  #user-new table label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  #user-new .form-buttons textarea, input[type="text"] {
+    width: 150px;
+    margin-bottom: 2px;
+    height: 26px;
+  }
+  #user-new .form-buttons textarea, input[type="password"] {
+    width: 150px;
+    margin-bottom: 2px;
+    height: 26px;
+  }
+  #user-new .form-buttons input[type="submit"] {
+    height: 30px;
+    font-size: 18px;
+  }
+  #facebook-connect-section h2 {
+    font-size: 24px;
+  }
+/*  #about {
+    min-height: 400px;
+    margin-bottom: 40px;
+  }*/
+  #about p {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  #about blockquote {
+    font-size: 17px;
+    /*min-height: 400px;*/
+    line-height: 25px;
+  }
+}
+
+
