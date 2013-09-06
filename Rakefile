@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-WonkInfo::Application.load_tasks
+WonkAboutDev::Application.load_tasks
