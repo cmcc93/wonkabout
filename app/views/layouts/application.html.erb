@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WonkInfo</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <title>Wonk <%= "| #{@page_title}" if @page_title %></title>
+  <%= stylesheet_link_tag "application", media: "all" %>
+  <meta name="author" content="Casey McCourt">
+  <!-- <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,900' rel='stylesheet' type='text/css'> -->
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
-</body>
+    <div id="wrapper"> 
+      <!-- header  -->
+      <header class="row-fluid clearfix">
+        <%= render(:partial => 'shared/header') %>
+      </header>
+      <!-- main -->
+      <div id="main" class="row-fluid clearfix">
+        <% if !flash[:notice].blank? %>
+          <div class="notice">
+            <%= flash[:notice] %>
+          </div>
+        <% end %>
+        <div id="content">
+          <%= yield %>
+        </div>
+      </div> <!-- end main -->
+      <!-- footer -->
+      <div class="row-fluid clearfix" id="footer">
+        <%= render(:partial => 'shared/footer') %>
+      </div> <!-- end footer -->
+            
+    </div><!--  end wrapper  -->
+  </body>
 </html>
+

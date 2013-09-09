@@ -1,0 +1,27 @@
+<!-- footer -->
+<div class="navbar">
+  <div class="navbar-inner clearfix">
+    <div id="footer-logo-section">
+      <% if current_page?(controller: 'public', action: 'about') %>
+        <%= image_tag('wonk-face-trans-bg-inverted.png') %>
+      <% elsif current_page?(controller: 'public', action: 'contact') %>
+        <%= link_to image_tag('wonk-face-trans-bg-inverted.png'), :controller => 'public', :action => 'about' %>
+      <% end %>
+    </div>
+
+    <% if current_page?(controller: 'public', action: 'about') %>
+      <li class="contact">
+        <%= link_to("Contact", {:controller => 'public', :action => 'contact'}) %>
+      </li>
+    <% elsif current_page?(controller: 'public', action: 'contact') %>
+      <li class="contact">
+        <%= link_to("About", {:controller => 'public', :action => 'about'}) %>
+      </li>
+    <% end %>
+
+  </div> <!-- end navbar-inner --> 
+  
+</div> <!-- end navbar -->
+
+
+<!-- end footer

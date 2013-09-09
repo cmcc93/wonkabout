@@ -1,0 +1,16 @@
+<div class="navbar" id="header-top-section">
+  <div class="navbar-inner">
+    <!-- <a class="brand" href="#">Title</a> -->
+    <div id="logo-section"> <!-- was class="span4" -->
+      <% if current_page?(controller: 'public', action: 'about') %>
+        <%= image_tag('wonk-full-trans-bg-inverted.png') %>
+      <% elsif current_page?(controller: 'public', action: 'contact') %>
+        <%= link_to image_tag('wonk-full-trans-bg-inverted.png'), :controller => 'public', :action => 'about' %>
+      <% end %>
+    </div>
+    <!-- begin ul -->
+    <ul class="nav" id="admin-section"> <!-- was span 8 -->
+      <!-- don't need anything here -->
+    </ul> 
+  </div> <!-- end navbar-inner -->
+</div> <!-- end header-top-section -->

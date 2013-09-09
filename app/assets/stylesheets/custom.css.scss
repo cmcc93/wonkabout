@@ -842,8 +842,9 @@ for use on pages other than the homepage.*/
     border-radius: 0px;
   }
     #footer .navbar-inner li {
-      float: right;
-      margin-right: 14%;
+      float: none;
+      // margin-right: 14%;
+      margin-top: 38px;
     }
     #footer .navbar-inner li#footer-first {
       /*float: left;
@@ -862,6 +863,7 @@ for use on pages other than the homepage.*/
       }
         #footer .navbar-inner li a:hover {
           color: gray;
+          text-decoration: none;
         }
       #footer .navbar-inner li.copyright {
         margin-top: 43px;
@@ -953,11 +955,12 @@ for use on pages other than the homepage.*/
   #contact {
     min-height: 400px;
     padding-bottom: 0px;
+    float: none;
   }
     #contact h4 {
       text-align: center;
       margin-left: 0px;
-      margin-top: 10%;
+      margin-top: 30%;
       margin-bottom: 7%;
     }
     #contact .info-box h3 {

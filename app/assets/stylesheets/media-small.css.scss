@@ -220,7 +220,7 @@ $fontVeryBig: 20px;
     display: block;
   }
   #footer .navbar-inner li {
-    margin-right: 16%;
+    margin-top: 20px;
   }
   #footer-logo-section h1 {
     float: none;
@@ -255,12 +255,15 @@ $fontVeryBig: 20px;
     width: 62px;
     height: 45px;
   }
+  #contact h4 {
+    font-size: 15px;
+  }
   #footer .navbar-inner li.copyright {
     font-size: 8px;
     margin-top: 32px;
   }
   #footer .navbar-inner li.contact {
-    margin-right: 5px;
+    margin-top: 22px;
   }
   #user-new {
     min-width: 0px;
@@ -613,6 +616,7 @@ $fontVeryBig: 20px;
         }
         #footer .navbar-inner li {
           margin-right: 5%;
+          margin-top: 22px;
         }
         #footer-logo-section {
           /*background: blue;*/
@@ -771,7 +775,9 @@ $fontVeryBig: 20px;
       line-height: 18px;
       margin-left: 5px;
     }
-
+    #contact h4 {
+      font-size: 15px;
+    }
     #main .span8-offset2-container {
         /*see bootstrap-responsive line 371*/
         /*margin-left: 17.094017094017094%;*/
