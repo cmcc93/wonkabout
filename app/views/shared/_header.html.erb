@@ -3,9 +3,10 @@
     <!-- <a class="brand" href="#">Title</a> -->
     <div id="logo-section"> <!-- was class="span4" -->
       <% if current_page?(controller: 'public', action: 'about') %>
-        <%= image_tag('wonk-full-trans-bg-inverted.png') %>
+        <%= image_tag('wonker-3.png', :class => 'header-image') %>
+        <!-- <%= link_to image_tag('wonker-3.png', :class => 'header-image'), :controller => 'public', :action => 'about' %> -->
       <% elsif current_page?(controller: 'public', action: 'contact') %>
-        <%= link_to image_tag('wonk-full-trans-bg-inverted.png'), :controller => 'public', :action => 'about' %>
+        <%= link_to image_tag('wonker-3.png'), :controller => 'public', :action => 'about' %>
       <% end %>
     </div>
     <!-- begin ul -->

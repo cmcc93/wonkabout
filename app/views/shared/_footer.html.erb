@@ -3,9 +3,9 @@
   <div class="navbar-inner clearfix">
     <div id="footer-logo-section">
       <% if current_page?(controller: 'public', action: 'about') %>
-        <%= image_tag('wonk-face-trans-bg-inverted.png') %>
+        <%= image_tag('wonker-3.png', :class => 'header-image') %>
       <% elsif current_page?(controller: 'public', action: 'contact') %>
-        <%= link_to image_tag('wonk-face-trans-bg-inverted.png'), :controller => 'public', :action => 'about' %>
+        <%= link_to image_tag('wonker-3.png'), :controller => 'public', :action => 'about', :class => 'header-image' %>
       <% end %>
     </div>
 
